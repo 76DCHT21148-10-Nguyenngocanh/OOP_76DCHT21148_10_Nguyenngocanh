@@ -28,7 +28,7 @@ class PS1{
                 a=b;
                 b=r;
             }
-            int uc=a;//ucln=a+b; vi b=0 nen uocln=a
+            int uc=a;//ucln=a+b; vi b=0 nen ucln=a
             ts=ts/uc;
             ms=ms/uc;
         }
@@ -39,7 +39,7 @@ class PS2:public PS1{
             ts=b.ts;
             ms=b.ms;
         }
-        int operator>(PS2 b){
+        bool operator>(PS2 b){
             return (ts*b.ms > b.ts*ms);
         }
 };
