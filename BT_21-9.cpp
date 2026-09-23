@@ -25,9 +25,10 @@ public:
 };
 class SP2 : public SP1 {
 public:
-    void operator=(SP2 b) {
+    bool operator=(SP2 b) {
         thuc = b.thuc;
         ao = b.ao;
+        return true;
     }
     bool operator>(SP2 b) {   
         return mod() > b.mod();
